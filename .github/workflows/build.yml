@@ -20,9 +20,10 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.24.0'
+          flutter-version: '3.22.3'
           channel: stable
           cache: true
+
       - name: Create local.properties
         run: |
           echo "flutter.sdk=$FLUTTER_ROOT" > android/local.properties
@@ -34,13 +35,13 @@ jobs:
       - name: Build APK
         run: flutter build apk --release --no-tree-shake-icons
 
-      - name: Upload APK artifact
+      - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: app-release-apk
           path: build/app/outputs/flutter-apk/app-release.apk
 
-      - name: Create GitHub Release
+      - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: build-${{ github.run_number }}
