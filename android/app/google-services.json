@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "615631410867",
+    "project_id": "kidsbedtimestory-1b926",
+    "storage_bucket": "kidsbedtimestory-1b926.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:615631410867:android:2ee5711299384b834bc2c6",
+        "android_client_info": {
+          "package_name": "com.example.kidsbedtimestoryclaude"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkM4zsWVFLJj7BWVisz8ifWQ9BXZmyLHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
